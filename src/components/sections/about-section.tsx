@@ -26,29 +26,58 @@ export function AboutSection() {
 						About <span className="gradient-text">Me</span>
 					</h2>
 					
-					<div className="grid md:grid-cols-2 gap-12 items-center">
+					<div className="grid md:grid-cols-3 gap-12 items-start">
 						<motion.div
 							initial={{ opacity: 0, x: -20 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.5, delay: 0.1 }}
 							viewport={{ once: true }}
+							className="md:col-span-2"
 						>
 							<div className="space-y-6">
+								<div className="flex items-center gap-6 mb-6">
+									<div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/30 rounded-full flex items-center justify-center">
+										<span className="text-2xl font-bold text-primary">DG</span>
+									</div>
+									<div>
+										<h3 className="text-2xl font-bold">Dhanuj Gumpella</h3>
+										<p className="text-primary font-medium">Software Engineer AI</p>
+										<p className="text-muted-foreground text-sm">Brooklyn, NY</p>
+									</div>
+								</div>
+								
 								<p className="text-lg text-muted-foreground leading-relaxed">
 									I'm a Software Engineer AI at NYC Department of Social Services, modernizing 
-									citizen-services platforms serving 8M+ NYC residents through AI-powered automation. 
+									citizen-services platforms serving <strong>8M+ NYC residents</strong> through AI-powered automation. 
 									I specialize in production-scale AI systems, RAG architectures, and cloud infrastructure.
 								</p>
 								<p className="text-lg text-muted-foreground leading-relaxed">
 									With a Master's in Computer Science from University of North Texas and extensive 
 									experience in ML/AI engineering, I've led Azure ML infrastructure modernization, 
-									built production RAG pipelines, and automated ML model lifecycles from development 
-									to deployment.
+									built production RAG pipelines achieving <strong>99.9% uptime</strong>, and automated ML model lifecycles 
+									processing <strong>100K+ daily requests</strong>.
 								</p>
 								<p className="text-lg text-muted-foreground leading-relaxed">
 									I'm passionate about leveraging cutting-edge AI technologies to solve real-world 
-									problems and create impactful solutions that improve people's lives.
+									problems and create impactful solutions that improve people's lives through scalable, 
+									production-ready systems.
 								</p>
+
+								{/* Key metrics */}
+								<div className="grid grid-cols-3 gap-4 pt-6 border-t border-muted">
+									<div className="text-center">
+										<div className="text-2xl font-bold text-primary">8M+</div>
+										<div className="text-sm text-muted-foreground">Users Served</div>
+									</div>
+									<div className="text-center">
+										<div className="text-2xl font-bold text-primary">99.9%</div>
+										<div className="text-sm text-muted-foreground">Uptime</div>
+									</div>
+									<div className="text-center">
+										<div className="text-2xl font-bold text-primary">100K+</div>
+										<div className="text-sm text-muted-foreground">Daily Requests</div>
+									</div>
+								</div>
 							</div>
 						</motion.div>
 						

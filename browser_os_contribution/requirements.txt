@@ -1,0 +1,60 @@
+# Core dependencies for Local GPT Agent with LinkedIn Automation
+# Privacy-first, locally-running AI assistant for form filling and workflow automation
+
+# Core AI and LLM dependencies
+ollama>=0.1.8
+pydantic>=2.5.0
+chromadb>=0.4.22
+sentence-transformers>=2.2.2
+
+# Voice processing dependencies
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.13
+pyttsx3>=2.90
+
+# Browser automation and web scraping
+playwright>=1.40.0
+selenium>=4.16.0
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+
+# Data processing and utilities
+pandas>=2.1.4
+numpy>=1.24.3
+python-dateutil>=2.8.2
+uuid-extensions>=0.1.0
+
+# Storage and database
+sqlite3  # Built-in with Python
+json5>=0.9.14
+
+# Async and concurrency
+asyncio  # Built-in with Python
+aiohttp>=3.9.0
+aiofiles>=23.2.0
+
+# Security and privacy
+cryptography>=41.0.7
+hashlib  # Built-in with Python
+
+# Logging and monitoring
+structlog>=23.2.0
+colorlog>=6.8.0
+
+# Development and testing dependencies (optional)
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+pytest-httpserver>=1.0.8
+black>=23.11.0
+mypy>=1.7.1
+pre-commit>=3.6.0
+
+# Optional: Enhanced ML capabilities
+scikit-learn>=1.3.2
+torch>=2.1.0  # For advanced embeddings (optional)
+transformers>=4.35.0  # For custom models (optional)
+
+# Browser integration specific
+pygetwindow>=0.0.9  # For window management
+keyboard>=0.13.5  # For hotkey support
+psutil>=5.9.6  # For process monitoring
